@@ -35,7 +35,7 @@ doJob={
 
 
 
-                        if(col1==col2 && col1=="0.00"){
+                        if( (col1=="0.00" || col1=="0" || col1=="0.0") && (col2=="0.00" || col2=="0" || col2=="0.0")){
                             findZeroNum++;
                             if(findZeroNum<=5)
                                 zerostr+=time+" 0.00 0.00\r\n";
